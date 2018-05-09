@@ -51,11 +51,11 @@ public class Main {
 	}
         List<Samochody> lista = new ArrayList<>();
        
-        Samochody ford = new Samochody("Ford", "Mustang", 290,700000);
-        Samochody fiat = new Samochody("Fiat", "126p", 14,35000);
-        Samochody seat = new Samochody("Seat", "Toledo", 190, 23500);
-        Samochody opel = new Samochody("Opel", "Zafira", 225, 80000);
-        Samochody peugeot = new Samochody("Peugeot", "Partner", 145, 7000);
+        Samochody ford = new Samochody("Volkswagen", "Touran", 300 ,500000);
+        Samochody fiat = new Samochody("Fiat", "Punto", 16,3500);
+        Samochody seat = new Samochody("Seat", "Ibiza", 180, 2300);
+        Samochody opel = new Samochody("Opel", "Astra", 205, 60000);
+        Samochody peugeot = new Samochody("Peugeot", "Tepee", 160, 70000);
         lista.add(ford);
         lista.add(fiat);
         lista.add(seat);
