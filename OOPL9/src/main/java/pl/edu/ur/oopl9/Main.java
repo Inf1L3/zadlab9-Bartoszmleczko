@@ -5,10 +5,15 @@
  */
 package pl.edu.ur.oopl9;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
+import java.util.*;
 /**
  *
  * @author maarchyl
@@ -63,6 +68,22 @@ public class Main {
         lista.add(peugeot);
         
         System.out.println(lista.get(3).toString());
+        Map<String, String> slownik = new HashMap<>();
+        String[] spis = new String[20];
+        String slowo,slowo2;
+        Scanner sc = new Scanner(System.in);
+        for(int i=0; i<20; i++){
+            slowo = sc.nextLine();
+            slowo2 = sc.nextLine();
+            spis[i] = slownik.put(slowo, slowo2);
+        }
+        slowo = sc.nextLine();
+        if(slownik.containsKey(slowo)){
+            System.out.println(slownik.get(slowo));
+        }
+        else System.out.println("Nie ma tlumaczenia tego slowa");
+        
+  
     }
     
 }
